@@ -9,11 +9,11 @@ const sc = (id) => {
 }
 
 const LINKS = [
-  { id: 'about',    label: "Haqimda"    },
-  { id: 'talim',    label: "Ta'lim"     },
-  { id: 'projects', label: "Loyihalar"  },
-  { id: 'blog',     label: "Blog"       },
-  { id: 'contact',  label: "Bog'lanish" },
+  { id: 'about', label: "Haqimda" },
+  { id: 'talim', label: "Ta'lim" },
+  { id: 'projects', label: "Loyihalar" },
+  { id: 'blog', label: "Blog" },
+  { id: 'contact', label: "Bog'lanish" },
 ]
 
 export default function Navbar({ active }) {

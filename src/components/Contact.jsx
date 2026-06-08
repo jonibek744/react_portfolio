@@ -39,7 +39,7 @@ export default function Contact() {
     <section id="contact" className="section">
       <div className="sec-header">
         <div className="sec-tag">Aloqa</div>
-        <h2 className="sec-title">Bog'la<span>nish</span></h2>
+        <h2 className="sec-title">Bog'lanish</h2>
         <p className="sec-sub">Menga istalgan vaqtda yozishingiz mumkin</p>
       </div>
 

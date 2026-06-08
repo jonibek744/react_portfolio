@@ -1,16 +1,18 @@
 import { useEffect, useRef, useState } from 'react'
 
 const PROG = [
-  { name: 'HTML5',       pct: 91 },
-  { name: 'CSS3',        pct: 80 },
-  { name: 'JavaScript',  pct: 70 },
-  { name: 'ESP32',       pct: 88 },
+  { name: 'HTML', pct: 91 },
+  { name: 'CSS', pct: 80 },
+  { name: 'Bootstrap', pct: 87 },
+  { name: 'JavaScript', pct: 70 },
+  { name: 'React', pct: 73 }
 ]
 const TECH = [
-  { name: 'Robototexnika',       pct: 85 },
-  { name: 'Elektronika',         pct: 80 },
-  { name: '3D Modellashtirish',  pct: 50 },
-  { name: 'IoT / Smart Systems', pct: 76 },
+  { name: 'Arduino', pct: 85 },
+  { name: 'ESP32', pct: 80 },
+  { name: ' C++ (Arduino)', pct: 68 },
+  { name: 'Elektronika', pct: 75 },
+  { name: '3D Modeling (ONSHAPE)', pct: 70 },
 ]
 
 function Bar({ name, pct, robo }) {
@@ -39,7 +41,7 @@ export default function Skills() {
     <section id="skills" className="section">
       <div className="sec-header">
         <div className="sec-tag">Bilim</div>
-        <h2 className="sec-title">Ko'nikma<span>larim</span></h2>
+        <h2 className="sec-title">Ko'nikmalarim</h2>
         <p className="sec-sub">Dasturlash va texnik ko'nikmalar darajasi</p>
       </div>
       <div className="skills-grid">
@@ -48,7 +50,7 @@ export default function Skills() {
           {PROG.map(s => <Bar key={s.name} {...s} />)}
         </div>
         <div className="card sk-grp robo">
-          <div className="sk-ttl">Texnik ko'nikmalar</div>
+          <div className="sk-ttl">Robototexnika</div>
           {TECH.map(s => <Bar key={s.name} {...s} robo />)}
         </div>
       </div>
